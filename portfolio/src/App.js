@@ -24,7 +24,7 @@ class App extends React.Component {
             <Routes>
               <Route path="/" element={<PortfolioGrid />} />
               <Route path="/about" element={<About/>} />
-              <Route path="/portfolio" />
+              <Route path="/projects" />
               <Route path="/services" element={<Services/>} />
               <Route path="/contact" />
             </Routes>

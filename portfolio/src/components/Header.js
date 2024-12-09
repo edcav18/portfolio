@@ -9,7 +9,7 @@ function Header() {
             <nav className="header-right">
                 <Link to={"/about"}>About</Link>
                 <a href="https://www.linkedin.com/in/edoardocavallero/" target="_blank" rel="noreferrer">LinkedIn</a>
-                <Link to={"/portfolio"}>Portfolio</Link>
+                <Link to={"/portfolio"}>Projects</Link>
                 <Link to={"/services"}>Services</Link>
                 <Link to={"contact"}>Contact</Link>
             </nav>
