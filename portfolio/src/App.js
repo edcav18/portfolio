@@ -22,7 +22,7 @@ class App extends React.Component {
           <Header />
           <main>
             <Routes>
-              <Route path="/" element={<PortfolioGrid />} />
+              <Route path="/portfolio" element={<PortfolioGrid />} />
               <Route path="/about" element={<About/>} />
               <Route path="/projects" />
               <Route path="/services" element={<Services/>} />
