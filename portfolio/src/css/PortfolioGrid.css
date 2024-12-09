@@ -1,16 +1,20 @@
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    height: 100%;
+    width: 100%;
 }
 
 .project {
     background: #f4f4f4;
     color: #333;
-    padding: 5rem;
+    padding: 1rem; /* Reduced padding to adapt to dynamic sizes */
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensure child elements stack vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .project:hover {
@@ -26,4 +30,13 @@
 .project h3::before {
     content: "★ ";
     color: gold;
+}
+
+.project1 {
+    max-width: 100%; /* Ensure the image scales inside the project */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+    text-align: center;
 }

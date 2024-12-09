@@ -1,11 +1,11 @@
 header {
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: black;
     color: white;
     padding: 1rem 2rem;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -19,6 +19,8 @@ header {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
+    margin-left: 50px;
+    margin-right: 30px;
 }
 
 .brand-name {
@@ -28,6 +30,7 @@ header {
 
 .header-right {
     display: flex;
+    flex-wrap: wrap;
     max-width: 60%;
 }
 

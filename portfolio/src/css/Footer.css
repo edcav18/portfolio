@@ -4,7 +4,8 @@ footer {
     text-align: center;
     padding: 1rem 0;
     font-size: 0.8em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    width: 100%; 
+    grid-area: footer; 
+    height: auto;
+    position: static;
 }

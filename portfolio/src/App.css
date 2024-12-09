@@ -1,16 +1,15 @@
 
 .App {
-  width: 100%;
-  margin: 0 auto;
-  background: #111;
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 300px; /* Content and sidebar */
+  grid-template-rows: auto 1fr auto; /* Header, main, footer */
   grid-template-areas:
       "header header"
       "content sidebar"
-      "footer footer";
-  gap: 20px;
+      "footer sidebar";
+  gap: 0px; /* Space between elements */
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
 }
 
 /* Basic layout and styling */
@@ -22,26 +21,24 @@ body {
   color: white;
 }
 
-/* Main content area */
-main {
-  margin: 100px auto 0;
-  max-width: 800px;
-  padding: 1rem;
-}
-
 .content {
-  background: white;
-  color: black;
-  padding: 20px;
+  grid-area: content; /* Place in the grid content area */
+  background: #111;
+  color: white;
+  padding: 1rem;
+
   border-radius: 5px;
-  overflow: hidden;
+  margin: 0;
+  width: auto; /* Prevent fixed width */
+  height: auto; /* Allow it to expand dynamically */
+  overflow-y: auto; /* Enable scrolling if content overflows */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto 1fr auto auto;
+  .App {
+      grid-template-columns: 1fr; /* Single column layout */
+      grid-template-rows: auto auto auto auto; /* Header, content, sidebar, footer */
       grid-template-areas:
           "header"
           "content"
@@ -50,25 +47,16 @@ main {
   }
 
   .sidebar {
-      width: 100%;
-      position: static;
-      margin-top: 1rem;
-      margin-bottom: 5rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      height: auto;
+      width: 100%; /* Full width for smaller screens */
+      margin: 1rem 0; /* Add spacing for better appearance */
+      position: relative; /* Ensure it remains in the flow */
   }
 
-  .skills {
-      grid-column: 1;
-  }
-
-  .contact-info {
-      grid-column: 2;
+  .content {
+      width: 100%; /* Ensure content spans the full width */
   }
 
   .project-grid {
-      grid-template-columns: 1fr;
-  }
+    grid-template-columns: 1fr; /* Single column layout */
+}
 }
