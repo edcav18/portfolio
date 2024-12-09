@@ -1,0 +1,17 @@
+.profile {
+    width: 150px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.about h1 {
+    margin-top: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

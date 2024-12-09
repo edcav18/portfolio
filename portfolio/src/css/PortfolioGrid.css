@@ -1,0 +1,29 @@
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    height: 100%;
+}
+
+.project {
+    background: #f4f4f4;
+    color: #333;
+    padding: 5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project:hover {
+    outline: 2px solid #ffc400;
+}
+
+.project:focus {
+    background-color: #07aff1;
+    outline: none;
+}
+
+/* Pseudo-element */
+.project h3::before {
+    content: "★ ";
+    color: gold;
+}

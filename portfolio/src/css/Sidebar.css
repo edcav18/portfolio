@@ -1,0 +1,43 @@
+.sidebar {
+    grid-area: sidebar;
+    background: #333;
+    padding: 1.5rem;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.skills {
+    padding-bottom: 5px;
+}
+
+a[href^="mailto"] {
+    text-decoration: underline;
+}
+
+.skills ul {
+    padding-left: 10px;
+    list-style: none;
+}
+
+.skills ul > li {
+    text-decoration:underline;
+}
+
+.skills li {
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #ff6347;
+}
+
+.contact-info p,
+a {
+    padding-left: 10px;
+}
