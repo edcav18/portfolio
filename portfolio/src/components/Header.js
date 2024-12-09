@@ -5,7 +5,14 @@ import "../css/Header.css"
 function Header() {
     return (
         <header>
-            <Link to={"/portfolio"} className="header-left">Ed Cavallero</Link>
+            <div className="header-left">
+                <Link to={"/portfolio"}>
+                    <img className="logo" src={`${process.env.PUBLIC_URL}/ECLogo.png`} alt="Logo" />
+                </Link>
+                <Link to={"/portfolio"} className="brand-name">
+                    Ed Cavallero
+                </Link>
+            </div>
             <nav className="header-right">
                 <Link to={"/about"}>About</Link>
                 <a href="https://www.linkedin.com/in/edoardocavallero/" target="_blank" rel="noreferrer">LinkedIn</a>
