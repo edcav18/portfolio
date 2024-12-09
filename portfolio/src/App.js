@@ -29,9 +29,9 @@ class App extends React.Component {
               <Route path="/contact" />
             </Routes>
           </main>
-          <Sidebar />
-          <Footer />
         </div>
+        <Sidebar />
+        <Footer />
       </Router>
     );
   }
