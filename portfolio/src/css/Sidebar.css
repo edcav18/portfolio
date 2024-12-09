@@ -1,11 +1,13 @@
 .sidebar {
-    grid-area: sidebar; /* Correctly place in grid */
+    grid-area: sidebar; 
     background: #333;
-    padding: 1.5rem; /* Adjust as needed */
-    height: auto; /* Allow the sidebar to expand with content */
-    width: 100%; /* Occupy the full grid width */
-    overflow-y: auto; /* Allow scrolling if content overflows */
-    position: relative; /* Keep it in the document flow */
+    padding: 1.5rem; 
+    padding-top: 3px;
+    height: auto; 
+    width: auto; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative; 
   }
 
 
@@ -20,15 +22,11 @@ a[href^="mailto"] {
 
 .skills ul {
     padding-left: 10px;
-    list-style: none;
-}
-
-.skills ul > li {
-    text-decoration:underline;
 }
 
 .skills li {
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 .contact-info a {

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Sidebar from './components/Sidebar';
@@ -22,9 +23,9 @@ class App extends React.Component {
           <Header />
           <main>
             <Routes>
-              <Route path="/portfolio" element={<PortfolioGrid />} />
+              <Route path="/portfolio" element={ <Home /> }/>
               <Route path="/about" element={<About />} />
-              <Route path="/projects" />
+              <Route path="/projects" element={<PortfolioGrid />} />
               <Route path="/services" element={<Services />} />
               <Route path="/contact" element={ <ContactForm /> }/>
             </Routes>

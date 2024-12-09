@@ -14,6 +14,7 @@ function Header() {
                 </Link>
             </div>
             <nav className="header-right">
+            <Link to={"/portfolio"}>Home</Link>
                 <Link to={"/about"}>About</Link>
                 <a href="https://www.linkedin.com/in/edoardocavallero/" target="_blank" rel="noreferrer">LinkedIn</a>
                 <Link to={"/projects"}>Projects</Link>

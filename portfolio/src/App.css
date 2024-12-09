@@ -1,18 +1,17 @@
-
 .App {
   display: grid;
-  grid-template-columns: 1fr 300px; /* Content and sidebar */
-  grid-template-rows: auto 1fr auto; /* Header, main, footer */
+  grid-template-columns: 1fr 180px;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
-      "header header"
-      "content sidebar"
-      "footer sidebar";
-  gap: 0px; /* Space between elements */
-  width: 100%;
-  min-height: 100vh; /* Full viewport height */
+    "header header"
+    "content sidebar"
+    "footer footer";
+  gap: 0px;
+  width: 100vw;
+  min-height: 100vh;
 }
 
-/* Basic layout and styling */
+
 body {
   box-sizing: border-box;
   background-color: #111;
@@ -22,41 +21,53 @@ body {
 }
 
 .content {
-  grid-area: content; /* Place in the grid content area */
+  grid-area: content;
   background: #111;
   color: white;
   padding: 1rem;
-
-  border-radius: 5px;
   margin: 0;
-  width: auto; /* Prevent fixed width */
-  height: auto; /* Allow it to expand dynamically */
-  overflow-y: auto; /* Enable scrolling if content overflows */
+  width: auto;
+  height: auto;
+  overflow-y: auto;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .App {
-      grid-template-columns: 1fr; /* Single column layout */
-      grid-template-rows: auto auto auto auto; /* Header, content, sidebar, footer */
-      grid-template-areas:
-          "header"
-          "content"
-          "sidebar"
-          "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
   }
 
   .sidebar {
-      width: 100%; /* Full width for smaller screens */
-      margin: 1rem 0; /* Add spacing for better appearance */
-      position: relative; /* Ensure it remains in the flow */
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    padding-left: 0;
   }
 
   .content {
-      width: 100%; /* Ensure content spans the full width */
+    width: 100%;
   }
 
   .project-grid {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
+  }
+
+  .bio {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .contact-form {
+    max-width: 300px;
 }
 }
