@@ -9,7 +9,8 @@ function About() {
     return (
         <section className="about">
             <h1>About Ed</h1>
-        <img src="./images/Profile.jpg" className="profile" alt= {""}></img>
+            <img className="profile" src={`${process.env.PUBLIC_URL}/images/Profile.jpg`} alt="" />
+
         <p>Hello, my name is Ed Cavallero and I am a Software Development student at Boston University.</p>
         </section>
     );

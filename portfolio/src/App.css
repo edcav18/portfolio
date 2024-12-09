@@ -39,7 +39,7 @@ main {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .container {
+  .App {
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr auto auto;
       grid-template-areas:
