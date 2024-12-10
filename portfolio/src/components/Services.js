@@ -24,8 +24,8 @@ function Services() {
           <h3>Programming & Software Development</h3>
           <ul>
             <li>Custom Software Solutions</li>
-            <li>API Development & Integration</li>
-            <li>Mobile App Development (iOS & Android)</li>
+            <li>API Integration</li>
+            <li>Mobile App Development</li>
           </ul>
         </div>
         <div>
@@ -33,7 +33,7 @@ function Services() {
           <ul>
             <li>Website Speed & SEO Optimization</li>
             <li>Ongoing Maintenance & Support</li>
-            <li>Security Audits & Enhancements</li>
+            <li>Security Enhancements</li>
           </ul>
         </div>
         <div>

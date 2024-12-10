@@ -1,4 +1,14 @@
 .welcome {
+    display: flex;
+    position: relative;
     font-size: 6rem;
-    margin-left: 20rem;
+    padding-left: 2rem
+}
+
+@media (max-width: 768px) {
+
+    .welcome {
+        font-size: 2rem;
+      }
+    
 }
