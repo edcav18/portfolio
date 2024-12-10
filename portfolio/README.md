@@ -3,6 +3,10 @@
 ## Overview
 This project is a **React-based portfolio website** designed to showcase personal skills, professional background, and a collection of projects. It features a modern, responsive design with a clean and intuitive user interface. The website is structured to include sections for home, about, services, portfolio projects, and a contact form for visitors to get in touch.
 
+**Website URL:** [edcav18.github.io/portfolio](https://edcav18.github.io/portfolio/)
+
+**Repository URL:** https://github.com/edcav18/portfolio
+
 ---
 
 ## Features
