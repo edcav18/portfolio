@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <div className="home-content">
-            <img className="home-banner" src={`${process.env.PUBLIC_URL}/images/san-diego-landscape.jpg`} alt="" />
+            <img className="home-banner" src={`${process.env.PUBLIC_URL}/images/san-diego-landscape.jpg`} alt="home-banner" />
             <h3 className="title">Welcome.</h3>
             <p className="subtitle">Hi, I'm Ed Cavallero, a passionate software developer dedicated to crafting innovative and user-centric solutions. <p></p>With a focus on creativity and precision, I strive to design impactful digital experiences that make a difference for individuals and businesses alike.</p>
             <img className="home-image" src={`${process.env.PUBLIC_URL}/images/Profile.jpg`} alt="" />
