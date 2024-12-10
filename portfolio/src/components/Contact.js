@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "../css/Contact.css";
 
 function ContactForm() {
+
+  useEffect(() => {
+    document.title = "Ed Cavallero | Contact";
+}, []);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

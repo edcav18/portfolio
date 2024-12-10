@@ -1,7 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
 import "../css/PortfolioGrid.css"
 
 function PortfolioGrid() {
+
+    useEffect(() => {
+        document.title = "Ed Cavallero | Projects";
+    }, []);
+
     return (
         <section className="content">
             <h2>Recent Work</h2>

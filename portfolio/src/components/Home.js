@@ -1,9 +1,15 @@
 import React from "react";
+import { useEffect } from "react";
 import "../css/Home.css"
 import { Link } from "react-router-dom";
 
 
 function Home() {
+
+    useEffect(() => {
+        document.title = "Ed Cavallero | Home";
+    }, []);
+
     return (
         <div className="home-content">
             <img className="home-banner" src={`${process.env.PUBLIC_URL}/images/san-diego-landscape.jpg`} alt="home-banner" />
