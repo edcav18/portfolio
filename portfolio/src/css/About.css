@@ -19,8 +19,10 @@
 }
 
 .bio {
-    padding-left: 200px;
-    padding-right: 200px;
+    max-width: 50rem;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .banner {

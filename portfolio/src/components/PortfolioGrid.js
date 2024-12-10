@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../css/PortfolioGrid.css"
 
 function PortfolioGrid() {
@@ -8,30 +7,31 @@ function PortfolioGrid() {
             <h2>Recent Work</h2>
             <div className="project-grid">
                 <div className="project" tabindex="0">
-                    <h3>Logo Design</h3>
-                    <Link to={"/portfolio"}>
+                    <h3>Project 1</h3>
+                    <a href="https://github.com/edcav18" target="_blank" rel="noreferrer">
                     <img className="project1" src={`${process.env.PUBLIC_URL}/ECLogo.png`} alt="Logo" />
-                </Link>
+                </a>
                 </div>
                 <div className="project" tabindex="0">
                     <h3>Project 2</h3>
-                    <Link to={"/portfolio"}>
+                    <a href="https://github.com/edcav18" target="_blank" rel="noreferrer">
                     <img className="project1" src={`${process.env.PUBLIC_URL}/ECLogo.png`} alt="Logo" />
-                </Link>
+                </a>
                 </div>
                 <div className="project" tabindex="0">
                     <h3>Project 3</h3>
-                    <Link to={"/portfolio"}>
+                    <a href="https://github.com/edcav18" target="_blank" rel="noreferrer">
                     <img className="project1" src={`${process.env.PUBLIC_URL}/ECLogo.png`} alt="Logo" />
-                </Link>
+                </a>
                 </div>
                 <div className="project" tabindex="0">
                     <h3>Project 4</h3>
-                    <Link to={"/portfolio"}>
+                    <a href="https://github.com/edcav18" target="_blank" rel="noreferrer">
                     <img className="project1" src={`${process.env.PUBLIC_URL}/ECLogo.png`} alt="Logo" />
-                </Link>
+                </a>
                 </div>
             </div>
+            <a className="github" href="https://github.com/edcav18" target="_blank" rel="noreferrer">View on Github</a>
         </section>
     );
 }

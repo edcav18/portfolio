@@ -45,8 +45,7 @@ body {
 
   .sidebar {
     display: flex;
-    width: 100%;
-    margin: 1rem 0;
+    width: auto;
     position: relative;
     flex-direction: row;
     gap: 100px;
@@ -65,6 +64,7 @@ body {
   .bio {
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 80px;
   }
 
   .contact-form {

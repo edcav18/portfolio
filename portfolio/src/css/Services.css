@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: 30px auto 100px;
-    max-width: 800px; /* Limit width for readability */
+    max-width: 800px;
     padding: 20px;
   }
   
@@ -23,20 +23,20 @@
   }
   
   .services ul {
-    list-style: none; /* Remove default bullet points */
+    list-style: none; 
     padding: 0;
     margin: 0;
   }
   
   .services ul li {
-    margin-bottom: 10px; /* Add space between list items */
-    padding-left: 20px; /* Indent for visual clarity */
+    margin-bottom: 10px; 
+    padding-left: 20px; 
     position: relative;
   }
   
   .services ul li::before {
-    content: "•"; /* Add a bullet manually */
-    color: #4ea3ff; /* Custom bullet color */
+    content: "•"; 
+    color: #4ea3ff; 
     position: absolute;
     left: 0;
     font-size: 1.5rem;
@@ -69,9 +69,11 @@
   
   .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two-column layout */
-    gap: 30px; /* Space between columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
     width: 100%;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
   }
   
   .services-list ul {

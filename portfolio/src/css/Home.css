@@ -1,14 +1,111 @@
-.welcome {
+.title {
+    grid-area: title;
     display: flex;
+    flex-direction: column;
     position: relative;
     font-size: 6rem;
-    padding-left: 2rem
+    padding-left: 5rem;
+}
+
+
+.subtitle {
+    grid-area: subtitle;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.home-banner {
+    grid-area: home-banner;
+    width: 100%;
+}
+
+.home-content {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 250px auto auto;
+    grid-template-areas: 
+    "home-banner home-banner"
+    "title image"
+    "subtitle image"
+    "links image"
+    ;
+
+}
+
+.links {
+    grid-area: links;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    list-style: none;
+    max-width: 40vw;
+    font-size: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.home-image {
+    grid-area: image;
+    grid-column: 2 / 3; 
+    grid-row: 2 / 5; 
+    justify-self: center; 
+    align-self: center; 
+    max-width: 250px;
+    border-radius: 100%; 
+    padding: 3rem;
 }
 
 @media (max-width: 768px) {
 
-    .welcome {
+    .title {
         font-size: 2rem;
+        justify-self: center;
+        padding: 0;
       }
+    
+.home-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "home-banner"  
+      "image"
+      "title"
+      "subtitle"
+      "links";
+  }
+
+  .subtitle {
+    padding: 0;
+    font-size: 1.2rem;
+    max-width: 50%;
+    justify-self: center;
+  }
+
+  .home-image {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 200px;
+    align-content: center;
+    padding: 3rem;
+  }
+
+  .links {
+    font-size: 1.2rem;
+    justify-self: center;
+    padding-left: 0;
+    max-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .links a {
+    padding-right: 1rem;
+  }
     
 }

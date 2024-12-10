@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .project {
@@ -29,7 +30,7 @@
 /* Pseudo-element */
 .project h3::before {
     content: "★ ";
-    color: gold;
+    color: #007bff;
 }
 
 .project1 {
@@ -40,3 +41,21 @@
 h2 {
     text-align: center;
 }
+
+.github {
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    padding: 15px 70px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+
+  .content {
+    text-align: center;
+  }
